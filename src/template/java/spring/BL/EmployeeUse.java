@@ -26,6 +26,7 @@ public class EmployeeUse {
 		IEmployee John = context.getBean("myEmployee", IEmployee.class);
 		
 		System.out.println(John.getTareas());
+		System.out.println(John.getInforme());
 		
 		context.close();
 		

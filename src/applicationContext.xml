@@ -8,9 +8,11 @@
  http://www.springframework.org/schema/context
  http://www.springframework.org/schema/context/spring-context-3.1.xsd
 ">
+<!-- Create the Dependency -->
+	<bean id="myReport" class="template.java.spring.IoC.ReportsCreator"></bean>
 
-	<bean id="myEmployee" class="template.java.spring.IoC.DirectorEmployee">
-		
+	<bean id="myEmployee" class="template.java.spring.IoC.BossEmployee">
+		<constructor-arg ref="myReport"></constructor-arg>
 	</bean>
 
 </beans>
