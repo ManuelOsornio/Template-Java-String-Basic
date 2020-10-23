@@ -1,6 +1,4 @@
-package template.java.spring.BL;
-
-import template.java.spring.IoC.IEmployee;
+package template.java.spring.IoC;
 
 public class DirectorEmployee implements IEmployee {
 
